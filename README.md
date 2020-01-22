@@ -7,11 +7,14 @@ user. The UI provides location, description, temperature, and an icon based on t
 
 
 <figure class="video_container">
-    <source src="https://github.com/shyamp229/Weather2_iOS/blob/master/Weather2.mov" type="video/mp4">
-  </video>
+    <a href="https://github.com/shyamp229/Weather2_iOS/blob/master/Weather2.mov" target=_blank>
+        <img src="https://github.com/shyamp229/Weather2_iOS/blob/master/UI.png?raw=true" height="500" width="250">
+    </a>
 </figure>
 
-<img src="https://github.com/shyamp229/Weather2_iOS/blob/master/Screen%20Shot%202020-01-22%20at%2010.05.53%20AM.png?raw=true" alt="Change location via Xcode to test" height="200" width="200">
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
 
 ## To build this on your device
 1. Must have Apple laptop or desktop.
@@ -23,6 +26,10 @@ user. The UI provides location, description, temperature, and an icon based on t
   - Use this link to get started: https://firebase.google.com/docs/ios/setup
 6. Must connect cloud firebase database to your application.
 7. Run the app from Xcode.
+
+Try using different location when testing, this can be done from Xcode.<br>
+<img src="https://github.com/shyamp229/Weather2_iOS/blob/master/Screen%20Shot%202020-01-22%20at%2010.05.53%20AM.png?raw=true" alt="Change location via Xcode to test" height="300" width="250">
+
 
 ## To connect your own cloud firebase database
 1. Watch this tutorial video: https://www.youtube.com/watch?v=rvxYRm6n_NM
