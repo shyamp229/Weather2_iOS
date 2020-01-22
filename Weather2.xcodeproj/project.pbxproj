@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A2B4B9323D77E2B00CF9813 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B4B9223D77E2B00CF9813 /* GoogleService-Info.plist */; };
 		3A30566B23D51F0100DE07D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30566A23D51F0100DE07D1 /* AppDelegate.swift */; };
 		3A30566D23D51F0100DE07D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A30566C23D51F0100DE07D1 /* SceneDelegate.swift */; };
 		3A30567223D51F0100DE07D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A30567023D51F0100DE07D1 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A2B4B9223D77E2B00CF9813 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A30566723D51F0100DE07D1 /* Weather2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A30566A23D51F0100DE07D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A30566C23D51F0100DE07D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				3A30567323D51F0300DE07D1 /* Assets.xcassets */,
 				3A30567523D51F0300DE07D1 /* LaunchScreen.storyboard */,
 				3A30567823D51F0300DE07D1 /* Info.plist */,
+				3A2B4B9223D77E2B00CF9813 /* GoogleService-Info.plist */,
 				3A30568023D521DB00DE07D1 /* WeatherViewController.swift */,
 				3A9A08D323D671C100A7CDE8 /* DarkSkyService.swift */,
 				3A9A08D523D6737F00A7CDE8 /* WeatherData.swift */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A30567723D51F0300DE07D1 /* LaunchScreen.storyboard in Resources */,
+				3A2B4B9323D77E2B00CF9813 /* GoogleService-Info.plist in Resources */,
 				3A30567423D51F0300DE07D1 /* Assets.xcassets in Resources */,
 				3A30567223D51F0100DE07D1 /* Main.storyboard in Resources */,
 			);

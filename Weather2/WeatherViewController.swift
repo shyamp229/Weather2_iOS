@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import Firebase
 
 class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -17,8 +18,13 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var weatherDescription: UILabel!
     @IBOutlet weak var temperature: UILabel!
     @IBOutlet weak var weatherIcon: UILabel!
+//    let db = Firestore.firestore()
+    var docRef: DocumentReference!
+    
     
     @IBAction func refreshButtonPressed(_ sender: UIBarButtonItem) {
+        
+        print("Refresh!")
         locationManager.requestLocation()
     }
     override func viewDidLoad() {
@@ -27,6 +33,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
+        docRef = Firestore.firestore().document("sampleData/weatherData/")
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -37,6 +44,15 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
             DarkSkyService.weatherForCoordinates(latitude: latitude, longitude: longitude) { weatherData, error in
                 
                 if let weatherData = weatherData {
+                    print(weatherData)
+                    let dataToSave: [String: Any] = ["temperature": weatherData.temperature, "description": weatherData.description, "icon": weatherData.icon, "longitude": longitude, "latitude": latitude]
+                    self.docRef.setData(dataToSave) { (error) in
+                        if let error = error {
+                            print("Got an error: \(error.localizedDescription)")
+                        } else {
+                            print("Weather Data has been saved!")
+                        }
+                    }
                     self.updateLabels(with: weatherData, at: location)
                 }
                 
@@ -51,7 +67,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         handleError(message: "Unable to load your location.")
     }
-    
+
     func handleError(message: String) {
         let alert = UIAlertController(title: "Error Loading Forecast", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -77,7 +93,6 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         self.temperature.text = data.temperature
         self.weatherDescription.text = data.description
         self.weatherIcon.text = emojiIcons[data.icon] ?? "❓"
-        
         CLGeocoder().reverseGeocodeLocation(location) { placemarks, error in
             let locationName = placemarks?.first?.locality ?? "Unknown Location"
             self.weatherLoction.text = locationName
