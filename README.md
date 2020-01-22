@@ -6,8 +6,7 @@ After retrievingthe weather data from the Dark Sky API, the data is stored onto 
 user. The UI provides location, description, temperature, and an icon based on the weather data.
 
 <video width="320" height="240">
-  <source src="https://raw.githubusercontent.com/shyamp229/Weather2_iOS/master/Weather2.mov" type="video/mov">
-  Your browser does not support the video tag.
+  <source src="https://raw.githubusercontent.com/shyamp229/Weather2_iOS/master/Weather2.mov">
 </video>
 
 <img src="https://github.com/shyamp229/Weather2_iOS/blob/master/Screen%20Shot%202020-01-22%20at%2010.05.53%20AM.png?raw=true" alt="Change location via Xcode to test" height="200" width="200">
