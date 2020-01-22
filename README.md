@@ -2,11 +2,11 @@
 Created basic version of weather app.
 
 ## To build this on your device:
-1.) Must have Apple laptop or desktop.
-2.) Must have CocoaPods installed. 
-  -- To install CococaPods --> open Terminal and run "sudo gem install cocoapods"
-3.) Download the Repo.
-4.) Use Xcode to run it onto a simulatator
+1. Must have Apple laptop or desktop.
+2. Must have CocoaPods installed. 
+  - To install CococaPods --> open Terminal and run `sudo gem install cocoapods`
+3. Download the Repo.
+4. Use Xcode to run it onto a simulatator
 
 
 ## Description
