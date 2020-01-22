@@ -7,7 +7,8 @@ user. The UI provides location, description, temperature, and an icon based on t
 
 
 <figure class="video_container">
-  <iframe src="https://raw.githubusercontent.com/shyamp229/Weather2_iOS/master/Weather2.mov" frameborder="0" allowfullscreen="true"> </iframe>
+    <source src="https://raw.githubusercontent.com/shyamp229/Weather2_iOS/master/Weather2.mov" type="video/mp4">
+  </video>
 </figure>
 
 <img src="https://github.com/shyamp229/Weather2_iOS/blob/master/Screen%20Shot%202020-01-22%20at%2010.05.53%20AM.png?raw=true" alt="Change location via Xcode to test" height="200" width="200">
