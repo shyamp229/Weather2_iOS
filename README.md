@@ -5,7 +5,12 @@ This weather app uses Dark Sky API to pull the weather data by using longitude a
 After retrievingthe weather data from the Dark Sky API, the data is stored onto cloud firebase database of that
 user. The UI provides location, description, temperature, and an icon based on the weather data.
 
-<img src="https://github.com/shyamp229/Weather2_iOS/blob/master/Screen%20Shot%202020-01-22%20at%2010.05.53%20AM.png?raw=true" alt="Change location via Xcode to test" height="42" width="42">
+<video width="320" height="240">
+  <source src="https://raw.githubusercontent.com/shyamp229/Weather2_iOS/master/Weather2.mov" type="video/mov">
+  Your browser does not support the video tag.
+</video>
+
+<img src="https://github.com/shyamp229/Weather2_iOS/blob/master/Screen%20Shot%202020-01-22%20at%2010.05.53%20AM.png?raw=true" alt="Change location via Xcode to test" height="200" width="200">
 
 ## To build this on your device
 1. Must have Apple laptop or desktop.
