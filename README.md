@@ -7,14 +7,11 @@ user. The UI provides location, description, temperature, and an icon based on t
 
 
 <figure class="video_container">
-    <a href="https://github.com/shyamp229/Weather2_iOS/blob/master/Weather2.mov" target=_blank>
+    <a href="https://raw.githubusercontent.com/shyamp229/Weather2_iOS/master/Weather2.mov" target=_blank>
         <img src="https://github.com/shyamp229/Weather2_iOS/blob/master/UI.png?raw=true" height="500" width="250">
     </a>
 </figure>
 
-<a href="default.asp">
-  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
-</a>
 
 ## To build this on your device
 1. Must have Apple laptop or desktop.
