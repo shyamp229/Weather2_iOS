@@ -7,7 +7,7 @@ user. The UI provides location, description, temperature, and an icon based on t
 
 
 <figure class="video_container">
-    <source src="https://raw.githubusercontent.com/shyamp229/Weather2_iOS/master/Weather2.mov" type="video/mp4">
+    <source src="https://github.com/shyamp229/Weather2_iOS/blob/master/Weather2.mov" type="video/mp4">
   </video>
 </figure>
 
