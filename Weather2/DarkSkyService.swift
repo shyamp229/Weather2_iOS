@@ -10,7 +10,7 @@ import Alamofire
 
 public class DarkSkyService {
     private static let baseURL = "https://api.darksky.net/forecast/"
-    private static let apiKey = "858db52f8e2037578ef6a518b52a0cc2"
+    private static let apiKey = ""
     
     
     static func weatherForCoordinates(latitude: String, longitude: String, completion: @escaping (WeatherData?, Error?) -> ()) {
